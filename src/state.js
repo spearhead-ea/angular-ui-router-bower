@@ -1419,6 +1419,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
             } else {
               result.$$controller = view.controller;
             }
+            injectables.$template = undefined;
             // Provide access to the state itself for internal use
             result.$$state = state;
             result.$$controllerAs = view.controllerAs;

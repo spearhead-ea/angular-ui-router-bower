@@ -1,6 +1,6 @@
 /**
  * State-based routing for AngularJS
- * @version v0.3.0
+ * @version v0.3.0-dev-2016-08-10
  * @link http://angular-ui.github.com/
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
@@ -3604,6 +3604,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
             } else {
               result.$$controller = view.controller;
             }
+            injectables.$template = undefined;
             // Provide access to the state itself for internal use
             result.$$state = state;
             result.$$controllerAs = view.controllerAs;
